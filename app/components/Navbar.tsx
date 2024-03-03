@@ -1,18 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
+
 import Image from "next/image";
 import { useState } from "react";
 import { Light2Dark } from "./Light2Dark";
+import { Community } from "./NavComponent/Community";
 import { Learn } from "./NavComponent/Learn";
 import { Participate } from "./NavComponent/Participate";
 import { RNS } from "./NavComponent/RNS";
-import { Community } from "./NavComponent/Community";
 
 export function Nabvar() {
   const [drawIcon, setDrawIcon] = useState(false);
@@ -60,8 +56,7 @@ export function Nabvar() {
             <Image
               width={100}
               height={100}
-              src="https://roninchain.com/static/images/ronin-nav-logo.svg"
-            />
+              src="https://roninchain.com/static/images/ronin-nav-logo.svg" alt={""}            />
           </div>
 
           <div className=" relative">
@@ -71,13 +66,13 @@ export function Nabvar() {
               }`}
             >
               <div className=" md:flex md:gap-x-8">
-                <Learn/>
+                <Learn />
               </div>
 
               <div className="hidden md:flex gap-x-8">
-                <Participate/>
-                <RNS/>
-                <Community/>
+                <Participate />
+                <RNS />
+                <Community />
                 <li className="hover:text-blue-700">Blog</li>
               </div>
 
